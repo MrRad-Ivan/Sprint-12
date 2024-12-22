@@ -2,10 +2,9 @@ name: golang-pipeline
 on:
   push:
     tags:
-      - 'v*'  # Запускать при добавлении тегов, начинающихся с v
-  push:
+      - 'v*'
     branches:
-      - main  # Запускать при пуше в основную ветку
+      - main
 
 jobs:
   test:
