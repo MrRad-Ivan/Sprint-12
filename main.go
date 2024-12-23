@@ -53,7 +53,7 @@ func (s ParcelService) Register(client int, address string) (Parcel, error) {
 
 func (s ParcelService) PrintClientParcels(client int) error {
 	parcels, err := s.store.GetByClient(client)
-	if err != nil {
+	if err != nil { //prSSSS
 		return err
 	}
 
